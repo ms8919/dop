@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: dop-gallery
+Version: 0.1.0
+Summary: Offline HTML gallery of NRW digital orthophoto (DOP) cutouts built from a CSV of addresses
+Requires-Python: >=3.11
+Requires-Dist: pandas
+Requires-Dist: rasterio
+Requires-Dist: pyproj
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"

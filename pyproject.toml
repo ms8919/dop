@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dop-gallery"
+version = "0.1.0"
+description = "Offline HTML gallery of NRW digital orthophoto (DOP) cutouts built from a CSV of addresses"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "rasterio",
+    "pyproj",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+dop-gallery = "dop_gallery.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,2 @@
+[console_scripts]
+dop-gallery = dop_gallery.cli:main
